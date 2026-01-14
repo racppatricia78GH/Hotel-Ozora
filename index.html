@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Ozora</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+
+
+</head>
+<body id="hotel-latar">
+
+    <!-- background-->
+    <section class="banner-section">
+            <img src="image/background-banner.png" alt="Banner" class="banner-bg">
+            
+            <img src="image/LITTLE-STAR.png" class="banner-star star-1">
+            <img src="image/LITTLE-STAR.png" class="banner-star star-2">
+            <img src="image/LITTLE-STAR.png" class="banner-star star-3">
+            <img src="image/LITTLE-STAR.png" class="banner-star star-4">
+
+            <div class="banner-left">
+                <img src="image/title-banner-ozora.png" class="banner-title">
+                <img src="image/sub-title-banner.png" class="banner-subtitle">
+            </div>
+
+            <div class="banner-right">
+                <div class="main-frame">
+                    <img src="image/main-frame-banner.png" class="main-frame-banner">
+                    <div class="slider-window">
+                        <div class="slider-track" id="slierTrack">
+                            <img src="image/banner-01.jpg">
+                            <img src="image/banner-02.jpg">
+                            <img src="image/banner-03.jpg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thumb-wrapper">
+
+                    <div class="thumb" onclick="goBanner(0)">
+                        <img src="image/small-frame-banner.png">
+                        <img src="image/banner-01.jpg" class="thumb-photo">
+                    </div>
+
+                    <div class="thumb" onclick="goBanner(1)">
+                        <img src="image/small-frame-banner.png">
+                        <img src="image/banner-02.jpg" class="thumb-photo">
+                    </div>
+                    
+                    <div class="thumb" onclick="goBanner(2)">
+                        <img src="image/small-frame-banner.png">
+                        <img src="image/banner-03.jpg" class="thumb-photo">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    <div id="main-bg">
+        
+        <!-- 1. SECTION BANNER -->
+        
+    
+    <!-- 2. NAVIGATION MENU (4 BUTTON SEJAJAR) -->
+    <nav class="menu-navigation">
+        <div class="menu-item">
+            <img src="image/button-menu1.png" class="btn-interact">
+        </div>
+        <div class="menu-item">
+            <img src="image/button-menu2.png" class="btn-interact">
+        </div>
+        <div class="menu-item">
+            <img src="image/button-menu3.png" class="btn-interact">
+        </div>
+        <div class="menu-item">
+            <img src="image/button-menu4.png" class="btn-interact">
+        </div>
+    </nav>
+
+    <!-- 3. PAGE 1-->
+    <section id="page-moon">
+        <div class="content-wrapper">
+              <div class="star-title-left">
+                 <img src="image/LITTLE-STAR.png" class="scroll-star star1">
+                <img src="image/LITTLE-STAR.png" class="scroll-star star2">
+                <img src="image/LITTLE-STAR.png" class="scroll-star star3">
+            </div>
+               
+            <div class="title-moon">
+                <img src="image/title-page1.png">
+            </div>
+
+            <div class="star-title-right">
+                 <img src="image/LITTLE-STAR.png" class="scroll-star star4">
+                <img src="image/LITTLE-STAR.png" class="scroll-star star5">
+                <img src="image/LITTLE-STAR.png" class="scroll-star star6">
+            </div>
+               
+        </div>
+            
+            <div class="button-container">
+                <div class="back-btn-layer">
+                    <img src="image/back-button1-page1.png" class="layer-base">
+                    <img src="image/button-page1.png" class="btn-interact top-layer">
+                </div>
+                <div class="back-btn-layer">
+                    <img src="image/back-button2-page1.png" class="layer-base">
+                    <img src="image/button-page1.png" class="btn-interact top-layer">
+                </div>
+            </div>
+
+            <div class="char-area">
+                <img src="image/Elephant-page1.png" class="wobble-char" onclick="wobble(this)">
+                <img src="image/fox-page1.png" class="wobble-char" onclick="wobble(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PAGE PAPA MAMA (LATAR PUTIH) -->
+    <section id="pp-mm">
+        <div class="ppmm-content">
+            <div class="hanger-wrapper">
+                <img src="image/back-button-pp-mm.png" class="hanger-bar">
+                <img src="image/bunny-gantung.png" class="bunny-swing">
+            </div>
+            <div class="btn-center">
+                <img src="image/button-pp-mm.png" class="btn-interact">
+            </div>
+            <img src="image/KOLASE-PP-MM.png" class="kolase-img">
+        </div>
+    </section>
+
+    <!-- 5. PAGE CAMP (LATAR BIRU) -->
+    <section id="camp-site">
+        <div class="camp-content">
+            <div class="camp-buttons">
+                <div class="back-btn-layer">
+                    <img src="image/back-button-camp.png" class="layer-base">
+                    <!-- Tree dan Tenda di atas layer back-button -->
+                    <img src="image/tree.png" class="decor-item tree-pos">
+                    <img src="image/tenda.png" class="decor-item tenda-pos">
+                    <img src="image/button-camp.png" class="btn-interact top-layer">
+                </div>
+            </div>
+            <!-- Printilan sejajar di bawah -->
+            <div class="printilan-area">
+                <img src="img/printilan-bawah-button.png">
+                <img src="image/tree.png" class="small-decor">
+                <img src="image/tenda.png" class="small-decor">
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PAGE BUFEE (LATAR HIJAU) -->
+    <section id="bufee-page">
+        <div class="plane-choice">
+            <img src="image/button-ANA.png" class="btn-interact">
+            <img src="image/button-JAL.png" class="btn-interact">
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <img src="image/button-kupon.png" class="btn-interact">
+            <img src="image/button-footer.png" class="btn-interact footer-main">
+        </div>
+    </footer>
+
+</div>
+
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
+</body>
+</html>
