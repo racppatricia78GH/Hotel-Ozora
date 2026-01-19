@@ -1,7 +1,7 @@
 let bannerImages = [
     'image/banner-01.jpg',
     'image/banner-02.jpg',
-    'image/banner-03.jpg'
+    'image/banner-03.jpg',
 ];
 
 const track = document.getElementById("sliderTrack");
@@ -90,3 +90,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+ var swiper = new Swiper(".mySwiper-camp-site", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination-camp",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next-camp",
+        prevEl: ".swiper-button-prev-camp",
+      },
+    });
