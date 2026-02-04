@@ -1,0 +1,322 @@
+
+/* Reset margin dan padding agar tidak ada jarak antar bagian */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    background-color: #fff;
+}
+
+#hotel-latar {
+    background-image: url('img/BACKBACK.png');
+    padding-bottom: 0px;
+    min-height: 100%;
+    z-index: -2;
+}
+
+.banner-section {
+    width: 100%;
+    /* Menggunakan background frame bergerigi */
+    background-image: url('../image/background-banner.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 60px 40px 40px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+/* Kiri */
+.left-content {
+    flex: 1;
+}
+
+.title-img {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+.sub-images {
+    display: flex;
+    gap: 10px;
+}
+
+.sub-images img {
+    width: 48%;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Kanan */
+.right-content {
+    flex: 1.5;
+}
+
+.main-photo-frame {
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.main-photo {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Dekorasi Bintang */
+.star {
+    position: absolute;
+    width: 40px;
+    z-index: 3;
+}
+
+.star-top-left { top: -20px; left: -20px; width: 60px; }
+.star-mid { bottom: 20%; left: 35%; width: 30px; }
+.star-bottom-right { bottom: -20px; right: -20px; width: 70px; }
+.star-on-photo { top: -15px; left: -15px; width: 35px; }
+
+/* Menu Navigasi Bawah */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.menu-section {
+    width: 100%;
+    /* Menggunakan background frame bergerigi */
+    background-image: url('../image/button-menu');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    background-image: url('../image/button-menu');
+    margin-bottom: 10px;
+    background-size: 100% 100%;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item span {
+    color: #8b572a; /* Warna teks kecokelatan sesuai tema */
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* --- Bagian 2 --- */
+.section-page1 {
+    width: 100%;
+    background-image: url('../image/BINGKAI-PAGE1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 40px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -1px; /* Menghilangkan celah mikroskopis antar section */
+}
+
+.container-page1 {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    text-align: center;
+}
+
+.title-page1 img {
+    max-width: 500px;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.swiper-slide {
+    background-image: url(../image/BINGKAI-PAGE1.png);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 500px;
+}
+
+.title {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text {
+    font-size: 0.85rem;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+.swiper-pagination {
+    margin-top: 10px;
+}
+
+
+
+.swiper {
+  width: 800px;
+}
+
+.swiper-custom{
+    margin-top: 60px;
+}
+
+.swiper-custom .swiper-button-next img,
+.swiper-custom .swiper-button-prev img{
+    display: none;
+    width: 100%;
+    
+} 
+
+.swiper-custom .swiper-button-prev{
+    transform: scaleX(-1);
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+}
+
+.swiper-custom .swiper-pagination{
+    span{
+        background: url(../image/navigasi-page1.png) !important;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.swiper-text{
+    margin-top: 60px;
+}
+
+
+/* Dekorasi Hewan */
+.deco-fox {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    width: 180px;
+    transform: translateY(-50%);
+}
+
+.deco-elephant {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 150px;
+    transform: translateY(-50%);
+}
+
+/* Container Paket */
+.package-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    z-index: 5;
+    position: relative;
+}
+
+.package-box {
+    background-image: url('../image/back-button-page1.png');
+    background-size: 100% 100%;
+    width: 380px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box-content p {
+    color: #3e7bb6; /* Biru sesuai bingkai paket */
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.btn-booking {
+    background-image: url('../image/button-page1.png');
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 200px;
+    height: 45px;
+    text-decoration: none;
+    line-height: 45px;
+    transition: transform 0.2s;
+}
+
+.btn-booking:hover { transform: scale(1.05); }
+
+.btn-booking span {
+    color: #8b572a;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Responsif sederhana untuk karakter agar tidak menutupi teks di layar kecil */
+@media (max-width: 900px) {
+    .deco-fox, .deco-elephant {
+        display: none;
+    }
+    .package-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
