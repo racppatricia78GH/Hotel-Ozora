@@ -1,210 +1,154 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Ozora</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-example.css">
+    <title>Hotel Ozora - Kanda Jinbocho</title>
 
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-/>
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    
+    <script src="js/script-example.js" charset="utf-8" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body id="hotel-latar">
 
-    <!-- background-->
     <section class="banner-section">
-            <img src="image/background-banner.png" alt="Banner" class="banner-bg">
-            
-            <img src="image/LITTLE-STAR.png" class="banner-star star-1">
-            <img src="image/LITTLE-STAR.png" class="banner-star star-2">
-            <img src="image/LITTLE-STAR.png" class="banner-star star-3">
-            <img src="image/LITTLE-STAR.png" class="banner-star star-4">
+        <div class="main-container">
+            <img src="image/LITTLE-STAR.png" class="star star-top-left" alt="star">
+            <img src="image/LITTLE-STAR.png" class="star star-mid" alt="star">
+            <img src="image/LITTLE-STAR.png" class="star star-bottom-right" alt="star">
 
-            <div class="banner-left">
-                <img src="image/title-banner-ozora.png" class="banner-title">
-                <img src="image/sub-title-banner.png" class="banner-subtitle">
-                <img src="image/small-frame-banner.png" class="small-frame-banner1">
-                <img src="image/small-frame-banner.png" class="small-frame-banner2">
+            <div class="content-wrapper">
+                <div class="left-content">
+                    <img src="image/title-banner.png" alt="Hotel Ozora Title" class="title-img">
+                    <div class="sub-images">
+                        <img src="image/banner-03.jpg" alt="Interior">
+                        <img src="image/banner-02.jpg" alt="Exterior">
+                    </div>
+                </div>
 
-                <div class="slider-window">
-                    <div class="slider-track" id="sliderTrack">
-                        <img src="image/banner-01.jpg">
-                        <img src="image/banner-02.jpg">
-                        <img src="image/banner-03.jpg">
+                <div class="right-content">
+                    <div class="main-photo-frame">
+                        <img src="image/banner-01.jpg" alt="Main Lobby View" class="main-photo">
+                        <img src="image/LITTLE-STAR.png" class="star star-on-photo" alt="star">
                     </div>
                 </div>
             </div>
-
-            <div class="banner-right">
-
-                <div class="main-frame">
-                    <img src="image/main-frame-banner.png" class="main-frame-banner">
-                </div>
-
-                <div class="thumb-wrapper">
-
-                    <div class="thumb" onclick="goBanner(0)">
-                        <img src="image/small-frame-banner.png">
-                        <img src="image/banner-01.jpg" class="thumb-photo">
-                    </div>
-
-                    <div class="thumb" onclick="goBanner(1)">
-                        <img src="image/small-frame-banner.png">
-                        <img src="image/banner-02.jpg" class="thumb-photo">
-                    </div>
-                    
-                    <div class="thumb" onclick="goBanner(2)">
-                        <img src="image/small-frame-banner.png">
-                        <img src="image/banner-03.jpg" class="thumb-photo">
-                    </div>
-                </div>
-            </div>
-            
-        </section>
+        </div>
+    </section>
 
 <div id="main-bg">
 
-<!-- 2. NAVIGATION MENU (4 BUTTON SEJAJAR) -->
-    <nav class="menu-navigation">
-        <div class="menu-item">
-            <img src="image/button-menu1.png" class="btn-interact">
-        </div>
-        <div class="menu-item">
-            <img src="image/button-menu2.png" class="btn-interact">
-        </div>
-        <div class="menu-item">
-            <img src="image/button-menu3.png" class="btn-interact">
-        </div>
-        <div class="menu-item">
-            <img src="image/button-menu4.png" class="btn-interact">
-        </div>
-    </nav>
-
-    <!-- 3. PAGE 1-->
-    <section id="page-moon">
-        <div class="content-wrapper">
-              <div class="star-title-left">
-                 <img src="image/LITTLE-STAR.png" class="scroll-star star1">
-                <img src="image/LITTLE-STAR.png" class="scroll-star star2">
-                <img src="image/LITTLE-STAR.png" class="scroll-star star3">
+<section class="menu-section">
+        <div class="menu-container">
+            <div class="menu-item">
+                <span>充実のホテル滞在</span>
             </div>
-               
-            <div class="title-moon">
-                <img src="image/title-page1.png">
+            <div class="menu-item">
+                <span>ママ・パパも安心</span>
             </div>
-
-            <div class="star-title-right">
-                 <img src="image/LITTLE-STAR.png" class="scroll-star star4">
-                <img src="image/LITTLE-STAR.png" class="scroll-star star5">
-                <img src="image/LITTLE-STAR.png" class="scroll-star star6">
+            <div class="menu-item">
+                <span>ホテルでキャンプ体験</span>
             </div>
-               
-        </div>
-            
-            <div class="button-container">
-                <div class="back-btn-layer">
-                    <img src="image/back-button1-page1.png" class="layer-base">
-                    <img src="image/button-page1.png" class="btn-interact top-layer">
-                </div>
-                <div class="back-btn-layer">
-                    <img src="image/back-button2-page1.png" class="layer-base">
-                    <img src="image/button-page1.png" class="btn-interact top-layer">
-                </div>
-            </div>
-
-            <div class="char-area">
-                <img src="image/Elephant-page1.png" class="wobble-char" onclick="wobble(this)">
-                <img src="image/fox-page1.png" class="wobble-char" onclick="wobble(this)">
-            </div>
-    </section>
-
-    <!-- 4. PAGE PAPA MAMA (LATAR PUTIH) -->
-    <section id="pp-mm">
-        <div class="ppmm-content">
-            <div class="hanger-wrapper">
-                <img src="image/back-button-pp-mm.png" class="hanger-bar">
-                <img src="image/bunny-gantung.png" class="bunny-swing">
-            </div>
-            <div class="btn-center">
-                <img src="image/button-pp-mm.png" class="btn-interact">
-            </div>
-            <img src="image/KOLASE-PP-MM.png" class="kolase-img">
-        </div>
-    </section>
-
-    <!-- 5. PAGE CAMP (LATAR BIRU) -->
-    <div class="swiper mySwiper-camp-site">
-        <div class="swiper-wrapper-camp">
-            <div class="swiper-camp-slide">
-                <img src="image/01_キャンプ.jpg">
-            </div>
-            <div class="swiper-camp-slide">
-                <img src="image/02_キャンプ.jpg">
-            </div>
-            <div class="swiper-camp-slide">
-                <img src="image/03_キャンプ.jpg">
-            </div>
-            <div class="swiper-camp-slide">
-                <img src="image/04_キャンプ.jpg">
-            </div>
-            <div class="swiper-camp-slide">
-                <img src="image/05_キャンプ.jpg">
-            </div>
-        </div>
-        <div class="swiper-button-next-camp">
-            <img src="image/navigasi-camp.png">
-        </div>
-        <div class="swiper-button-prev-camp">
-            <img src="image/navigasi-camp.png">
-        </div>
-        <div class="swiper-pagination-camp">
-            <img src="image/LITTLE-STAR.png">
-        </div>
-    </div>
-        <div class="camp-content">
-            <div class="camp-buttons">
-                <div class="back-btn-layer">
-                    <img src="image/back-button-camp.png" class="layer-base">
-                    <!-- Tree dan Tenda di atas layer back-button -->
-                    <img src="image/tree.png" class="decor-item tree-pos">
-                    <img src="image/tenda.png" class="decor-item tenda-pos">
-                    <img src="image/button-camp.png" class="btn-interact top-layer">
-                </div>
-            </div>
-            <!-- Printilan sejajar di bawah -->
-            <div class="printilan-area">
-                <img src="img/printilan-bawah-button.png">
-                <img src="image/tree.png" class="small-decor">
-                <img src="image/tenda.png" class="small-decor">
+            <div class="menu-item">
+                <span>最高のブフェー</span>
             </div>
         </div>
     </section>
 
-    <!-- 6. PAGE BUFEE (LATAR HIJAU) -->
-    <section id="bufee-page">
-        <div class="plane-choice">
-            <img src="image/button-ANA.png" class="btn-interact">
-            <img src="image/button-JAL.png" class="btn-interact">
-        </div>
-    </section>
+    <section class="section-page1">
+    <div class="container-page1">
+            <div class="title-page1">
+                <img src="image/title-page1.png" alt="充実のホテル滞在">
+            </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-inner">
-            <img src="image/button-kupon.png" class="btn-interact">
-            <img src="image/button-footer.png" class="btn-interact footer-main">
-        </div>
-    </footer>
-
-</div>
         
+        <div class="swiper swiper-custom">
+        <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
 
+                <div class="swiper-slide">
+                    <div class="title" data-swiper-parallax="-300"><img src="image/halsatu-01.jpg" alt=""></div>
+                    <div class="subtitle" data-swiper-parallax="-200"></div>
+                    <div class="text" data-swiper-parallax="-100">
+                        <p>
+                大空リゾート®からは無料のシャトルバスによるアクセスも可能です。ホテルに到着したらフロントでチェックインをお済ませ下さい。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="title" data-swiper-parallax="-300"><img src="image/halsatu-02.jpg" alt=""></div>
+                    <div class="subtitle" data-swiper-parallax="-200"></div>
+                    <div class="text" data-swiper-parallax="-100">
+                      <p>
+                客室は全室広々設計で、ファミリーやグループみんなでくつろげます。また、全室がバス・トイレ別で、洗い場付きのお風呂はお子様がいるファミリーにご好評です。
+                        </p>
+                    </div>
+                </div>
+              
+                <div class="swiper-slide">
+                    <div class="title" data-swiper-parallax="-300"><img src="image/halsatu-03.jpg" alt=""></div>
+                    <div class="subtitle" data-swiper-parallax="-200"></div>
+                    <div class="text" data-swiper-parallax="-100">
+                        <p>
+                館内には、お子様連れのご家族はもちろん、さまざまな年代の方が快適に過ごしていただける施設やサービスをご用意しています。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="title" data-swiper-parallax="-300"><img src="image/halsatu-04.jpg" alt=""></div>
+                    <div class="subtitle" data-swiper-parallax="-200"></div>
+                    <div class="text" data-swiper-parallax="-100">
+                        <p>
+                最上階の7階には、宿泊者限定でご利用できる大浴場を用意。海を一望できる大浴場で、ご家族みんなで癒やされて下さい。<br>
+                ※小学1年生以上の方は、男女別のご利用とさせていただきます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <!-- If we need pagination -->
+            <div class="swiper-pagination">
+                <img src="image/LITTLE-STAR.png" alt="star">
+            </div>
+    
+        <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"><img src="image/navigasi-page1.png" alt=""></div>
+            <div class="swiper-button-next"><img src="image/navigasi-page1.png" alt=""></div>
+        </div>
+
+
+            <img src="image/fox-page1.png" class="deco-fox" alt="fox">
+            <img src="image/Elephant-page1.png" class="deco-elephant" alt="elephant">
+
+            <div class="package-container">
+                <div class="package-box">
+                    <div class="box-content">
+                        <p>駐車場無料【最大32時間ステイ】<br>15時から翌23時まで滞在できるバルコニー付き客室</p>
+                        <a href="#" class="btn-booking">
+                            <span>宿泊予約はこちら</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="package-box">
+                    <div class="box-content">
+                        <p>駐車場無料【最大32時間ステイ】<br>朝5時から翌13時まで滞在できるバルコニー付き客室</p>
+                        <a href="#" class="btn-booking">
+                            <span>宿泊予約はこちら</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    
 <script src="js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     
 </body>
 </html>
+
